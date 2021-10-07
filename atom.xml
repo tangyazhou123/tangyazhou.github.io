@@ -6,7 +6,7 @@
   <link href="https://tangyazhou123.github.io/atom.xml" rel="self"/>
   
   <link href="https://tangyazhou123.github.io/"/>
-  <updated>2021-10-07T15:50:11.484Z</updated>
+  <updated>2021-10-07T15:52:43.745Z</updated>
   <id>https://tangyazhou123.github.io/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>记西安游</title>
-    <link href="https://tangyazhou123.github.io/2021/10/05/%E8%AE%B0%E8%A5%BF%E5%AE%89%E6%B8%B8/"/>
-    <id>https://tangyazhou123.github.io/2021/10/05/%E8%AE%B0%E8%A5%BF%E5%AE%89%E6%B8%B8/</id>
-    <published>2021-10-05T09:19:50.000Z</published>
-    <updated>2021-10-07T15:50:11.484Z</updated>
-    
-    <content type="html"><![CDATA[<p>![](C:\Users\YZ Tang\Pictures\Saved Pictures\51208f9d0b89b88c8027af9a2097488.jpg)</p><p>在西安的最后一天晚上，去了大唐不夜城，合影留念。</p><p>刚准备离开，音乐响起…………</p><iframe height=498 width=510 src="https://t.zijieimg.com/dpX1N4s/https://v.ixigua.com/dpCvsmf/">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;![](C:\Users\YZ Tang\Pictures\Saved Pictures\51208f9d0b89b88c8027af9a2097488.jpg)&lt;/p&gt;
-&lt;p&gt;在西安的最后一天晚上，去了大唐不夜城，合影留念。&lt;/p&gt;
-&lt;p&gt;刚准备离开，音乐响起…………&lt;/</summary>
-      
-    
-    
-    
-    
-    <category term="游记" scheme="https://tangyazhou123.github.io/tags/%E6%B8%B8%E8%AE%B0/"/>
-    
-    <category term="感想" scheme="https://tangyazhou123.github.io/tags/%E6%84%9F%E6%83%B3/"/>
-    
-  </entry>
   
   <entry>
     <title>高斯扩散模型与Python实现</title>
