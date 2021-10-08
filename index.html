@@ -196,7 +196,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-10-08 21:25:21" itemprop="dateModified" datetime="2021-10-08T21:25:21+08:00">2021-10-08</time>
+        <time title="Modified: 2021-10-08 21:48:07" itemprop="dateModified" datetime="2021-10-08T21:48:07+08:00">2021-10-08</time>
       </span>
 
   
@@ -255,7 +255,7 @@
 
 <h5 id="轨迹输出"><a href="#轨迹输出" class="headerlink" title="轨迹输出"></a>轨迹输出</h5><p>上面得到2021-09-27 00 06 12 18四个时刻的后向轨迹点数据集</p>
 <p>点数据由xy导入ArcGis，输出如下图：</p>
-<img src="C:\Users\YZ Tang\Pictures\Saved Pictures\轨迹点.png" style="zoom:50%;" />
+<img src="https://i.loli.net/2021/10/08/NZC5RJxrUtTQ9Ac.png" style="zoom: 50%;" />
 
 <p>点击“工具箱-要素-点集成线”</p>
 <img src="C:\Users\YZ Tang\Pictures\Saved Pictures\轨迹.png" style="zoom:50%;" />
@@ -264,7 +264,14 @@
 <p>先加入底图，调用腾讯地图api，请求新疆边界坐标</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;https://apis.map.qq.com/ws/district/v1/search?&amp;keyword=650000&amp;get_polygon=2&amp;key=OISBZ-PUJYJ-JASFH-F6HZC-XVR7J-OKF4E&quot;</span></span><br><span class="line">res = requests.get(url).json()</span><br><span class="line"><span class="built_in">print</span>(res)</span><br><span class="line">x = res[<span class="string">&quot;result&quot;</span>][<span class="number">0</span>][<span class="number">0</span>][<span class="string">&quot;polygon&quot;</span>][<span class="number">0</span>][::<span class="number">2</span>]</span><br><span class="line">y = res[<span class="string">&quot;result&quot;</span>][<span class="number">0</span>][<span class="number">0</span>][<span class="string">&quot;polygon&quot;</span>][<span class="number">0</span>][<span class="number">1</span>::<span class="number">2</span>]</span><br><span class="line">df = pd.DataFrame(&#123;<span class="string">&quot;x&quot;</span>: x, <span class="string">&quot;y&quot;</span>: y&#125;)</span><br><span class="line">df.to_csv(<span class="string">r&quot;C:\Users\YZ Tang\Desktop\geodata\polygon_xj.csv&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>![](C:\Users\YZ Tang\Pictures\Saved Pictures\后向轨迹图.png)</p>
+<img src="https://i.loli.net/2021/10/08/c9tqXJ4EFynTWpa.png"  />
+
+
+
+
+
+
+
 <h5 id="聚类分析"><a href="#聚类分析" class="headerlink" title="聚类分析"></a>聚类分析</h5><h5 id="PSCF"><a href="#PSCF" class="headerlink" title="PSCF"></a>PSCF</h5><p>WGT</p>
 <p>​                                            </p>
 <p>​                                            </p>
