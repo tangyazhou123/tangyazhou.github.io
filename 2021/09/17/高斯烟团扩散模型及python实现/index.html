@@ -23,7 +23,7 @@
 <meta name="description" content="高斯烟团扩散模型烟团扩散模型以一系列分离的 、又相互重叠的具有有限大小的“烟团”来模拟连续排放的烟流 ，能够对烟团在非均匀性流场中的运动进行模拟，模型结构简单、易于计算。 数据处理数据来源烟团的运动轨迹与所处的风场变化有关，流场数据在NCEP（美国国家环境预测中心）官网的GDAS（全球数据同化预报系统）系统获取。GDAS系统包含不同压力面上6h一次（国际标准时间00 06 12 18h）的数据集">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高斯扩散模型与Python实现">
-<meta property="og:url" content="https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/index.html">
+<meta property="og:url" content="https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E5%8F%8Apython%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="打小有点憨儿">
 <meta property="og:description" content="高斯烟团扩散模型烟团扩散模型以一系列分离的 、又相互重叠的具有有限大小的“烟团”来模拟连续排放的烟流 ，能够对烟团在非均匀性流场中的运动进行模拟，模型结构简单、易于计算。 数据处理数据来源烟团的运动轨迹与所处的风场变化有关，流场数据在NCEP（美国国家环境预测中心）官网的GDAS（全球数据同化预报系统）系统获取。GDAS系统包含不同压力面上6h一次（国际标准时间00 06 12 18h）的数据集">
 <meta property="og:locale" content="en_US">
@@ -42,11 +42,11 @@
 <meta name="twitter:image" content="https://i.loli.net/2021/09/27/vPi4LrAKhnNdp9u.png">
 
 
-<link rel="canonical" href="https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/">
+<link rel="canonical" href="https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E5%8F%8Apython%E5%AE%9E%E7%8E%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/","path":"2021/09/17/高斯烟团扩散模型/","title":"高斯扩散模型与Python实现"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E5%8F%8Apython%E5%AE%9E%E7%8E%B0/","path":"2021/09/17/高斯烟团扩散模型及python实现/","title":"高斯扩散模型与Python实现"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>高斯扩散模型与Python实现 | 打小有点憨儿</title>
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,7 +194,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/">
+    <link itemprop="mainEntityOfPage" href="https://tangyazhou123.github.io/2021/09/17/%E9%AB%98%E6%96%AF%E7%83%9F%E5%9B%A2%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E5%8F%8Apython%E5%AE%9E%E7%8E%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -319,6 +319,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/10/10/%E9%AB%98%E6%96%AF%E7%83%9F%E7%BE%BD%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E5%8F%8Apython%E5%AE%9E%E7%8E%B0/" rel="next" title="高斯烟羽扩散模型及python实现">
+                  高斯烟羽扩散模型及python实现 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
